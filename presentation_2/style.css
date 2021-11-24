@@ -1,0 +1,228 @@
+:root{
+    --mainColor_1:#7cc576;
+    --mainColor_2:#f99798;
+    --mainColor_3:#e6f4e5;
+    --mainColor_4:#00adef;
+}
+body{
+    box-sizing: border-box;
+ padding: 0px;
+     margin: 0px;
+    font-family: cursive;
+
+ }
+/*********************************************************************************************************************************START SALMAN*/
+ 
+#image{
+    height: 70%;
+    width: 100VW;
+  background-image: url(122.jpg);
+  background-size: contain;
+    background-repeat: repeat;
+    background-position: right;
+}
+#image .img1{
+    /* box-shadow:0 4px 8px 0 red, 0 6px 20px 0 red; */
+   /* filter: blur();*/
+   /* float: ;*/
+    /*border-radius: 50%;*/
+  
+    /*height: auto;*/
+  border: 2px solid red;
+  
+    
+  object-fit: contain;*/
+   object-position: top left;*/
+  /*  image-orientation: 20px;*/
+    
+}
+.divI{
+   /* background: linear-gradient(black,red);*/
+    /* background: radial-gradient(circle, black,red);*/
+/*background-color: aquamarine;*/
+    width: 49%;
+    padding: 3rem
+;
+    height: 60%;
+    border: 1px
+ solid gray;
+    FLOAT: RIGHT;
+    position: relative;
+}
+.img1{
+    border: 2PX SOLID RED;
+   
+width: 100%;
+   height:150PX;
+    opacity: 0.5;
+   object-fit: COVER;
+    object-position:  LEFT;
+  position: absolute
+
+}
+ #image .img1:hover {
+   transform: scale(0.5);
+   filter: grayscale(50%);
+   
+}*/
+#image .divf{
+position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 10px;
+}
+
+
+/*********************************************************************************************************************************END SALMAN*/
+ *{
+     padding:0;
+     margin:0;
+ }
+ a:hover{
+    color:var(--mainColor_2);
+   /* border-bottom:3px solid var(--mainColor_2);  */
+   }
+
+ button{
+  padding:  1rem 2rem;
+  background-color: transparent;
+  font-size: 20px;
+   /* border: 3px solid var(--mainColor_1); */
+  /* border-radius:3px;  */
+  margin:1rem 0;
+  font-family: cursive;
+  font-weight: bold;
+ 
+ }
+ button:hover{
+     /* border-color: var(--mainColor_2); */
+     
+    }
+ .cards{
+     display:flex;
+     padding:20px; 
+     justify-content: space-around;
+ }
+ .section1{
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 73px);
+        background-image: url("img_back.jpg");
+        background-size: cover;
+        text-align: center;
+        background-color: var(--mainColor_2);
+        /* box-shadow: inset 0 0 0 100vw rgba(0,0,0,.45); */
+ }
+
+ 
+ .card_text{
+     padding: 5rem 3rem;
+     flex-basis:20%;
+     /* box-shadow: 0px 8px 16px rgba(0,0,0,.1);   */
+      /* border:5px solid var(--mainColor_2); */
+     /* border-top-right-radius: 150px;  */
+     /* border-bottom-left-radius: 150px; */
+
+ }
+ 
+ header{
+     display:flex;
+     background-color: var( --mainColor_3);
+     color:  #000;;
+     text-align: center;
+     align-items:center;
+     padding: 15px 30px;
+     font-weight:800;
+     font-size: 20px;
+     
+ }
+  .logo{
+     font-size: 30px;
+
+  }
+  .logo span{
+    color:var(--mainColor_2);
+  }
+ nav{
+     
+     display:flex;
+     text-align: center;
+    margin-left:auto;
+     
+   
+ }
+ ul{list-style: none; padding: 0;margin: 0;}
+ li{
+     display: inline-block; 
+     padding: 5px;
+     margin-left: 20px;
+     transition:0.5s;}
+
+li a{
+
+text-decoration: none;
+color:#000;
+
+     }
+
+ section h1{
+     margin: 0.7rem 0;
+     text-align: center;
+    color:black;
+     padding: 5px;
+     height: auto;
+     font-size: 24px;
+     margin: 0;
+ }
+ .text{
+     width:60%;
+     max-width:400px;
+     text-align:center;
+     margin:auto;
+     color:#000;
+         }
+
+ footer{
+     background-color: #333;
+     color: #fff;
+     font-size: 20px;
+     text-align: center;
+     padding: 10px 0;
+    
+ }
+
+  .section2 {
+    
+         text-align:center;
+ }
+ 
+ p{
+     
+      color: black;
+     font-family: cursive;
+     font-size: 20px;
+     margin:1rem 0;
+ }
+
+ @media(max-width:767px){
+
+     header{
+         flex-direction:column;
+        align-items:center;
+         
+     }
+     nav{
+         flex-direction: column;
+         margin-top:2rem;
+         margin-left:0;
+     }
+     .card_text{
+     padding:5rem;
+     width:50%;
+     margin-bottom: 2rem;
+ }
+     .cards{
+      flex-direction:column;
+      align-items: center;
+  }
+ }
